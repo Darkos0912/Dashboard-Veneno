@@ -7,7 +7,7 @@ function TotalCategory() {
     fetch("http://localhost:4200/api/products/list")
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
+        
         // Obtener todas las categorías de los productos
         const products = data.products;
 
@@ -46,11 +46,7 @@ function TotalCategory() {
 
       <div className="row justify-content-center">
         {categoriesData.map((category, index) => (
-          <div
-            key={index}
-            className="card shadow mb-4"
-            style={{ margin: "10px" }}
-          >
+          <div key={index} className="card shadow mb-4" style={{ margin: "10px" }}>
             <div className="card-header py-3">
               <h5 className="m-0 font-weight-bold text-gray-800">
                 {category.categoryName}

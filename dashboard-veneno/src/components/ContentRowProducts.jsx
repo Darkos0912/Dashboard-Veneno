@@ -2,8 +2,7 @@ import React, { useEffect, useState } from "react";
 import SmallCard from "./SmallCard";
 import NotFound from "./NotFound";
 
-function ContentRowMovies() {
-  const [products, setProducts] = useState([]);
+function ContentRowProducts() {
   const [totalProducts, setTotalProducts] = useState(0);
   const [totalUsers, setTotalUser] = useState(0);
   const [totalCategories, setTotalCategories] = useState(0);
@@ -12,25 +11,24 @@ function ContentRowMovies() {
     fetch("http://localhost:4200/api/products/list")
       .then((response) => response.json())
       .then((data) => {
-        setProducts(data.products);
         setTotalProducts(data.meta.count);
 
-        // Calculate the total number of unique categories
+        // Calcular el total de categorías
         const categories = data.products.map((product) => product.category);
         const uniqueCategories = new Set(categories);
         setTotalCategories(uniqueCategories.size);
       })
       .catch((error) => {
-        <NotFound/>
+        <NotFound />
       });
 
     fetch("http://localhost:4200/api/users/list")
       .then((response) => response.json())
       .then((data) => {
-        setTotalUser(data.meta.count );
+        setTotalUser(data.meta.count);
       })
       .catch((error) => {
-        <NotFound/>
+        <NotFound />
       });
   }, []);
 
@@ -51,7 +49,7 @@ function ContentRowMovies() {
   const totalUser = {
     title: "Total de Usuarios",
     color: "warning",
-    cuantity: totalUsers, 
+    cuantity: totalUsers,
     icon: "fa-user-check",
   };
 
@@ -66,4 +64,4 @@ function ContentRowMovies() {
   );
 }
 
-export default ContentRowMovies;
+export default ContentRowProducts;

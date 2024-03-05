@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import NotFound from "./NotFound";
 
-function LastMovieInDb(){
-    const [lastProduct, setLastProduct] = useState(null);
+function LastProduct() {
+  const [lastProduct, setLastProduct] = useState(null);
 
   useEffect(() => {
     fetch("http://localhost:4200/api/products/list")
@@ -10,17 +10,17 @@ function LastMovieInDb(){
       .then((data) => {
         const products = data.products;
         if (products.length > 0) {
-            const latestProduct = products[products.length - 1];
-            setLastProduct(latestProduct);
+          const latestProduct = products[products.length - 1];
+          setLastProduct(latestProduct);
         }
       })
       .catch((error) => {
-        <NotFound/>
+        <NotFound />
       });
   }, []);
 
   if (!lastProduct) {
-    return <div>Cargando...</div>; 
+    return <div>Cargando...</div>;
   }
 
   const capitalizeFirstLetter = (str) => {
@@ -47,7 +47,7 @@ function LastMovieInDb(){
               <img
                 className="img-fluid px-3 px-sm-4 mt-3 mb-4"
                 style={{ width: "40rem" }}
-                src={"http://localhost:4200/img/"+lastProduct.image}
+                src={"http://localhost:4200/img/" + lastProduct.image}
                 alt={lastProduct.name}
               />
             </div>
@@ -64,4 +64,4 @@ function LastMovieInDb(){
   );
 }
 
-export default LastMovieInDb;
+export default LastProduct;

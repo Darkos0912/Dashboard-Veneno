@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import NotFound from "./NotFound";
 
-function GenresInDb() {
+function LastUser() {
   const [lastUser, setLastUser] = useState(null);
 
   useEffect(() => {
@@ -47,8 +47,8 @@ function GenresInDb() {
               <img
                 className="img-fluid px-3 px-sm-4 mt-3 mb-4"
                 style={{ width: "40rem" }}
-                src={"http://localhost:4200/img/users/"+lastUser.image}
-                alt= {capitalizeFirstLetter(lastUser.name)}
+                src={"http://localhost:4200/img/users/" + lastUser.image}
+                alt={capitalizeFirstLetter(lastUser.name)}
               />
             </div>
             <p>Nombre: {capitalizeFirstLetter(lastUser.name)}</p>
@@ -65,4 +65,4 @@ function GenresInDb() {
   );
 }
 
-export default GenresInDb;
+export default LastUser;

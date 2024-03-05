@@ -1,15 +1,14 @@
 import React from 'react';
-import LastMovieInDb from './LastMovieInDb';
-import GenresInDb from './GenresInDb';
+import LastProduct from './LastProduct';
+import LastUser from './LastUser';
 import TotalCategory from './TotalCategory';
 import ProductsList from './ProductsList';
 
-function ContentRowCenter(){
+function ContentRowCenter() {
     return (
         <div className="row">
-            
-            <LastMovieInDb />
-            <GenresInDb />
+            <LastProduct />
+            <LastUser />
             <TotalCategory />
             <ProductsList />
         </div>
