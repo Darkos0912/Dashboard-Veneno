@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../assets/images/veneno-logo-oficial.jpeg";
+import image from "../assets/img/logo.jpeg";
 import ContentWrapper from "./ContentWrapper";
 import LastUser from "./LastUser";
 import LastProduct from "./LastProduct";

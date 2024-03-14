@@ -1,5 +1,5 @@
 import React from "react";
-import imagenFondo from "../assets/images/404.png";
+import imagenFondo from "../assets/img/404.png";
 import {Link} from "react-router-dom";
 
 function NotFound() {
