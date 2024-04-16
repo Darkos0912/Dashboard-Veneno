@@ -42,7 +42,7 @@ function ProductsList() {
               </div>
               <div className="card-body">
                 <div className="text-center">
-                  <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{ width: "40rem" }} src={"http://localhost:4200/img/" + product.image} alt={product.name}/>
+                  <img className="img-fluid px-3 px-sm-4 mt-3 mb-4" style={{ width: "40rem" }} src={"http://localhost:4200/img/products/" + product.image} alt={product.name}/>
                 </div>
                 <p>Descripcion: {capitalizeFirstLetter(product.description)}</p>
                 <p>Precio: {product.price}</p>

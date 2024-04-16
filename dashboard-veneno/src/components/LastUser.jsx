@@ -54,7 +54,6 @@ function LastUser() {
             <p>Nombre: {capitalizeFirstLetter(lastUser.name)}</p>
             <p>Apellido: {capitalizeFirstLetter(lastUser.lastname)}</p>
             <p>Email: {lastUser.email}</p>
-            <p>Rol: {capitalizeFirstLetter(lastUser.role)}</p>
             <p>Género: {capitalizeFirstLetter(lastUser.gender)}</p>
             <p>Dirección: {capitalizeFirstLetter(lastUser.address)}</p>
             <p>Edad: {lastUser.age} años</p>
