@@ -3,19 +3,18 @@ Temática: Ropa Urbana
 
 Logo: https://drive.google.com/file/d/1JE_qp4FxV8KwyDFR-TDuGuJwTTpO5VT7/view?usp=sharing
 
-Descripción:
+Este Dashboard mostrará algunas secciones referidas a las prendas que están cargadas en la base de datos
+creadas en el proyecto de Veneno.
+Para esto tendrán que tener el servidor de Veneno levantado. Una vez hecho eso, ya con la base de datos cargada a través de phpmyadmin
+podrán visualizar los productos cargados en el dashboard, ya que este hace el llamado a la api del proyecto de Veneno.
 
-Somos una empresa ecommerce de Jujuy, que provee indumentaria urbana de calidad para personas apasionadas en este estilo, brindándoles una amplia variedad de talles, precios y métodos de pago que más se adapten a sus gustos.
+Esto está hecho con React. Utilicé la biblioteca Bootstrap para lo que es el diseño del estilo. Lo demás HTML, CSS, Javascript.
 
-Nuestro catálogo diverso y vibrante ofrece una amplia gama de indumentaria urbana de alta calidad que captura la esencia de la calle y refleja la pasión por la cultura urbana.
+Para levantar el proyecto debes:
 
-Nos enorgullece ofrecer productos confeccionados con materiales duraderos y cómodos, para que puedas disfrutar de la moda y la comodidad sin compromisos. Explora nuestra tienda en línea y descubre las últimas tendencias en moda urbana que te permitirán destacar en cada ocasión.
+1_ Clonar el repositorio en alguna carpeta local.
+2_ Debes instalar todas las dependencias: npm install.
+3_ Debes levantar el proyecto con el comando: npm start.
 
-¡Únete a la cultura urbana y encuentra tu estilo hoy mismo!
-
-Integrantes del Equipo:
-
-Sergio Eliel Balero
-Marcos Quinteros
-Esteban Ezequiel Villanueva
-Joaquin Alessandro Yarbi Aiza
+Anterior a esto debes tener levantado el proyecto Veneno, para que a través de la api de dicho proyecto, se puedan llamar
+a los productos para su correcta visualización en este dashboard.
